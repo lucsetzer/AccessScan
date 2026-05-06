@@ -1,8 +1,8 @@
 <template>
-  <div class="panel-grid">
+  <div class="sitemap-layout">
 
     <!-- Input column -->
-    <section aria-labelledby="sitemap-input-heading">
+    <section aria-labelledby="sitemap-results-heading" aria-live="polite" style="min-width: 0;">
       <div class="card">
         <h2 id="sitemap-input-heading" class="card-title">Sitemap Scanner</h2>
 
@@ -364,5 +364,18 @@ function clear() {
   gap: 0.375rem;
   flex-wrap: wrap;
   flex-shrink: 0;
+}
+
+.sitemap-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .sitemap-layout {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

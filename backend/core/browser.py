@@ -43,7 +43,7 @@ USER_AGENT = (
 )
 
 DEFAULT_VIEWPORT = {"width": 1280, "height": 800}
-DEFAULT_TIMEOUT   = 30_000   # 30 seconds
+DEFAULT_TIMEOUT   = 60_000   # 60 seconds
 NETWORK_IDLE_WAIT = 3_000    # 3 seconds after networkidle for dynamic content
 
 # Screenshot output directory (for scan evidence)
